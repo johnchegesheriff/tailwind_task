@@ -12,7 +12,16 @@ function App() {
 
   const addTodo = (todo) => {
     setTodos([...todos, todo])
-  }
+  };
+
+  const deleteTodo = (id) => {
+    setTodos(todos.filter(todo => todo.id !== id));
+  };
+
+  const updateTodo = (updatedTodo) => {
+    setTodos(todos.map(todo => (todo.id === updatedTodo.id ? updatedTodo : todo)));
+  };
+
 
   console.log(todos)
 
@@ -23,7 +32,7 @@ function App() {
       <div className="bg-white h-4/6 w-8/12 rounded-md py-6 px-[2.8rem] overflow-scroll overflow-x-hidden">
         <h1 className='text-2xl font-bold text-[#3C92C3] font-serif text-center mb-10'>Hello world</h1>
         <AddTodo onAddTodo={addTodo} />
-        <TodoList todos={todos} />
+        <TodoList todos={todos} onDeleteTodo={deleteTodo} onUpdateTodo={updateTodo}/>
       </div>
     </div>
   )
