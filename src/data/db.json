@@ -1,0 +1,39 @@
+{
+    "todos": [
+        {
+            "id": 1,
+            "description": "Do Laundry",
+            "completed": false
+        },
+        {
+            "id": 2,
+            "description": "Go to the Gym",
+            "completed": true
+        },
+        {
+            "id": 3,
+            "description": "Write Student Emails",
+            "completed": false
+        },
+        {
+            "id": 4,
+            "description": "Go Grocery shopping",
+            "completed": false
+        },
+        {
+            "id": 5,
+            "description": "Watch an episode of harry potter",
+            "completed": true
+        },
+        {
+            "id": 6,
+            "description": "Go Grocery shopping",
+            "completed": false
+        },
+        {
+            "id": 7,
+            "description": "Watch an episode of harry potter",
+            "completed": true
+        }
+    ]
+}
